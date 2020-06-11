@@ -13,7 +13,6 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700|Roboto:300,400,700&display=swap" rel="stylesheet">
-
   <!-- Bootstrap CSS File -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -22,9 +21,10 @@
   <link href="vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
   <link href="vendor/aos/aos.css" rel="stylesheet">
   <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="css/style.css" rel="stylesheet">
+  
+  <!--<link href="css/bootstrap.min.css" rel="stylesheet">
+    Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet"> 
   
   
       <script>
@@ -35,6 +35,157 @@
            window.parent.postMessage("resize", "*");
          }
       </script>
+	<style>
+		.wrap-login100 {
+			width: 670px;
+			border-radius: 10px;
+			overflow: hidden;
+			position: relative;
+		}
+		.login100-form-title {
+			width: 100%;
+			position: relative;
+			z-index: 1;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			padding: 100px 15px 100px 15px;
+			margin-bottom: 10px;
+		}
+		legend {
+			display: block;
+			width: 100%;
+			padding: 0;
+			margin-bottom: 20px;
+			font-size: 21px;
+			line-height: inherit;
+			color: #333;
+			border: 0;
+			border-bottom: 1px solid #e5e5e5;
+		}
+		legend {
+			padding: 0;
+			border: 0;
+		}
+		form#contact_form {
+			background-image: linear-gradient(to bottom,#e8e8e8 0,#f5f5f5 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe8e8e8', endColorstr='#fff5f5f5', GradientType=0);
+			background-repeat: repeat-x;
+			border-color: #dcdcdc;
+			-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);
+			box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);
+		}
+		fieldset {
+			display: block;
+			margin-inline-start: 2px;
+			margin-inline-end: 2px;
+			padding-block-start: 0.35em;
+			padding-inline-start: 0.75em;
+			padding-inline-end: 0.75em;
+			padding-block-end: 0.625em;
+			min-inline-size: min-content;
+			margin-top: 30px;
+			border-style: groove;
+			border-color: threedface;
+			border-image: initial;
+		}
+		.form-horizontal .form-group {
+			margin-right: -15px;
+			margin-left: -15px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+		.input-group {
+			position: relative;
+			display: table;
+			border-collapse: separate;
+		}
+		.input-group-addon:first-child {
+			border-right: 0;
+		}
+		.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child>.btn-group:not(:last-child)>.btn {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+		.input-group-addon {
+			padding: 6px 12px;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1;
+			color: #555;
+			text-align: center;
+			background-color: #eee;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+		.input-group-addon, .input-group-btn {
+			width: 1%;
+			white-space: nowrap;
+			vertical-align: middle;
+		}
+		.input-group-addon, .input-group-btn, .input-group .form-control {
+			display: table-cell;
+		}
+		.glyphicon {
+			position: relative;
+			top: 1px;
+			display: inline-block;
+			font-family: 'Glyphicons Halflings';
+			font-style: normal;
+			font-weight: 400;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		.input-group .form-control {
+			position: relative;
+			z-index: 2;
+			float: left;
+			width: 100%;
+			margin-bottom: 0;
+		}
+		.form-control {
+			display: block;
+			width: 100%;
+			height: 34px;
+			padding: 6px 12px;
+			font-size: 14px;
+			line-height: 1.42857143;
+			color: #555;
+			background-color: #fff;
+			background-image: none;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+			-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+			-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+			transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		}
+		input, button, select, textarea {
+			font-family: inherit;
+			font-size: inherit;
+			line-height: inherit;
+		}
+		input {
+			line-height: normal;
+		}
+		button, input, optgroup, select, textarea {
+			margin: 0;
+			font: inherit;
+			color: inherit;
+		}
+	</style>
   
 
   <!-- =======================================================
@@ -140,38 +291,37 @@
          <form class="well form-horizontal" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfIc50k-d1EWv4M6YYtCCvh-Nsv1pxxyEkO-vw19SiH3DJYNA/formResponse" target="_self" method="POST" id="contact_form">
 			<div class="login100-form-title" style="background-image: url(https://archive.org/download/bg-01/bg-01.jpg);">
 					<span class="login100-form-title-1">
-						
 					</span>
 				</div>
             <fieldset>
                <div class="form-group">
-                  <div class="col-md-4 inputGroupContainer">
+                  <div class="col-md-8 inputGroupContainer">
                      <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <span class="input-group-addon icofont-user-alt-2"><i class="glyphicon glyphicon-user"></i></span>
                         <input name="entry.443421226" placeholder="Full Name" class="form-control" type="text">
                      </div>
                   </div>
                </div>
                <div class="form-group">
-                  <div class="col-md-4 inputGroupContainer">
+                  <div class="col-md-8 inputGroupContainer">
                      <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <span class="input-group-addon icofont-ui-email"><i class="glyphicon glyphicon-envelope"></i></span>
                         <input name="entry.581405267" placeholder="E-Mail Address" class="form-control" type="text">
                      </div>
                   </div>
                </div>
                <div class="form-group">
-                  <div class="col-md-4 inputGroupContainer">
+                  <div class="col-md-8 inputGroupContainer">
                      <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                        <span class="input-group-addon icofont-phone-circle"><i class="glyphicon glyphicon-earphone"></i></span>
                         <input name="entry.2085377963" placeholder="Phone (+1) 555-1212" class="form-control" type="text">
                      </div>
                   </div>
                </div>
                <div class="form-group">
-                  <div class="col-md-4 selectContainer">
+                  <div class="col-md-8 selectContainer">
                      <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                        <span class="input-group-addon icofont-listine-dots"><i class="glyphicon glyphicon-list"></i></span>
                         <select name="entry.13180357" class="form-control selectpicker">
                            <option value=" ">Please select course</option>
                            <option>Mulesoft</option>
@@ -192,33 +342,33 @@
                   </div>
                </div>
                <div class="form-group">
-                  <div class="col-md-4 inputGroupContainer">
+                  <div class="col-md-8 inputGroupContainer">
                      <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                        <span class="input-group-addon icofont-home"><i class="glyphicon glyphicon-home"></i></span>
                         <input name="entry.369976483" placeholder="City" class="form-control" type="text">
                      </div>
                   </div>
                </div>
                <div class="form-group">
-                  <div class="col-md-4 inputGroupContainer">
+                  <div class="col-md-8 inputGroupContainer">
                      <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                        <span class="input-group-addon icofont-world"><i class="glyphicon glyphicon-home"></i></span>
                         <input name="entry.973487360" placeholder="Country" class="form-control" type="text">
                      </div>
                   </div>
                </div>
                <div class="form-group">
-                  <div class="col-md-4 inputGroupContainer">
+                  <div class="col-md-8 inputGroupContainer">
                      <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                        <span class="input-group-addon icofont-pencil-alt-2"><i class="glyphicon glyphicon-pencil"></i></span>
                         <textarea class="form-control" name="entry.621402167" placeholder="Comments"></textarea>
                      </div>
                   </div>
                </div>
-               <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+               
                <div class="form-group">
-                  <label class="col-md-4 control-label"></label>
-                  <div class="col-md-4 btnSub">
+                  <label class="col-md-8 control-label"></label>
+                  <div class="col-md-8 btnSub">
                      <button type="submit" class="btn btn-primary d-block w-100">Send <span class="glyphicon glyphicon-send"></span></button>
                   </div>
                </div>
