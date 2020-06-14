@@ -23,6 +23,32 @@
   <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   
   
+      <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+      
+      <style>
+         #success_message{ display: none;}
+			 legend {
+			 text-align: center;
+			 font-weight: bold;
+			 font-size: 27px;
+         }
+		 .form-horizontal .has-feedback .form-control-feedback {
+			top: 0;
+			right: 15px;
+			position: absolute;
+			padding-top: 9px;
+		}
+      </style>
+      <script>
+         window.console = window.console || function(t) {};
+      </script>
+      <script>
+         if (document.location.search.match(/type=embed/gi)) {
+           window.parent.postMessage("resize", "*");
+         }
+      </script>
+  
+  
   <!--<link href="css/bootstrap.min.css" rel="stylesheet">
     Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet"> 
@@ -295,96 +321,98 @@
 		  -->
           <div class="row justify-content-center text-center">
             <div class="wrap-login100">
-				
-         <form class="well form-horizontal" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfIc50k-d1EWv4M6YYtCCvh-Nsv1pxxyEkO-vw19SiH3DJYNA/formResponse" target="_self" method="POST" id="contact_form">
-			<div class="login100-form-title" style="background-image: url(https://archive.org/download/bg-01/bg-01.jpg);">
+			 <form class="well form-horizontal" action=" " method="post" id="contact_form">
+				<div class="login100-form-title" style="background-image: url(https://archive.org/download/bg-01/bg-01.jpg);">
 					<span class="login100-form-title-1">
 					</span>
 				</div>
-            <fieldset>
-               <div class="form-group">
-                  <div class="col-md-8 inputGroupContainer">
-                     <div class="input-group">
-                        <span class="input-group-addon icofont-user-alt-2"><i class="glyphicon glyphicon-user"></i></span>
-                        <input name="first_name" placeholder="Full Name" class="form-control" type="text">
-                     </div>
-                  </div>
-               </div>
-               <div class="form-group">
-                  <div class="col-md-8 inputGroupContainer">
-                     <div class="input-group">
-                        <span class="input-group-addon icofont-ui-email"><i class="glyphicon glyphicon-envelope"></i></span>
-                        <input name="entry.581405267" placeholder="E-Mail Address" class="form-control" type="text">
-                     </div>
-                  </div>
-               </div>
-               <div class="form-group">
-                  <div class="col-md-8 inputGroupContainer">
-                     <div class="input-group">
-                        <span class="input-group-addon icofont-phone-circle"><i class="glyphicon glyphicon-earphone"></i></span>
-                        <input name="entry.2085377963" placeholder="Phone (+1) 555-1212" class="form-control" type="text">
-                     </div>
-                  </div>
-               </div>
-               <div class="form-group">
-                  <div class="col-md-8 selectContainer">
-                     <div class="input-group">
-                        <span class="input-group-addon icofont-listine-dots"><i class="glyphicon glyphicon-list"></i></span>
-                        <select name="entry.13180357" class="form-control selectpicker">
-                           <option value=" ">Please select course</option>
-                           <option>Mulesoft</option>
-                           <option>Java</option>
-                           <option>Spring Boot</option>
-                           <option>Microservices</option>
-                           <option>Heroku</option>
-                           <option>Python</option>
-                           <option>Hadoop</option>
-                           <option>MapReduce</option>
-                           <option>Yarn</option>
-                           <option>Hive</option>
-                           <option>Data Analysis</option>
-                           <option>AWS</option>
-                           <option>AngularJS</option>
-                           <option>ReactJS</option>
-                           <option>Others</option>
-                        </select>
-                     </div>
-                  </div>
-               </div>
-               <div class="form-group">
-                  <div class="col-md-8 inputGroupContainer">
-                     <div class="input-group">
-                        <span class="input-group-addon icofont-home"><i class="glyphicon glyphicon-home"></i></span>
-                        <input name="entry.369976483" placeholder="City" class="form-control" type="text">
-                     </div>
-                  </div>
-               </div>
-               <div class="form-group">
-                  <div class="col-md-8 inputGroupContainer">
-                     <div class="input-group">
-                        <span class="input-group-addon icofont-world"><i class="glyphicon glyphicon-home"></i></span>
-                        <input name="entry.973487360" placeholder="Country" class="form-control" type="text">
-                     </div>
-                  </div>
-               </div>
-               <div class="form-group">
-                  <div class="col-md-8 inputGroupContainer">
-                     <div class="input-group">
-                        <span class="input-group-addon icofont-pencil-alt-2"><i class="glyphicon glyphicon-pencil"></i></span>
-                        <textarea class="form-control" name="entry.621402167" placeholder="Comments"></textarea>
-                     </div>
-                  </div>
-               </div>
-               
-               <div class="form-group">
-                  <label class="col-md-8 control-label"></label>
-                  <div class="col-md-8 btnSub">
-                     <button type="submit" class="btn btn-primary d-block w-100">Send <span class="glyphicon glyphicon-send"></span></button>
-                  </div>
-               </div>
-            </fieldset>
-         </form>
-		 </div>
+				<fieldset>
+				   <div class="form-group">
+					  <div class="col-md-8 inputGroupContainer">
+						 <div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input name="full_name" placeholder="Full Name" class="form-control" type="text">
+						 </div>
+					  </div>
+				   </div>
+				   <div class="form-group">
+					  <div class="col-md-8 inputGroupContainer">
+						 <div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+							<input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+						 </div>
+					  </div>
+				   </div>
+				   <div class="form-group">
+					  <div class="col-md-8 inputGroupContainer">
+						 <div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+							<input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+						 </div>
+					  </div>
+				   </div>
+				   <div class="form-group">
+					  <div class="col-md-8 selectContainer">
+						 <div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+							<select name="course" class="form-control selectpicker">
+							   <option value=" ">Please select Course</option>
+							   <option>Mulesoft</option>
+							   <option>Java</option>
+							   <option>Angular JS</option>
+							   <option>React JS</option>
+							   <option>Spring</option>
+							   <option>Spring Boot</option>
+							   <option>Microservices</option>
+							   <option>Heroku</option>
+							   <option>Python</option>
+							   <option>Hadoop</option>
+							   <option>MapReduce</option>
+							   <option>Yarn</option>
+							   <option>Hive</option>
+							   <option>Data Analysis</option>
+							   <option>AWS</option>
+							   <option>Others</option>
+							</select>
+						 </div>
+					  </div>
+				   </div>
+				   <div class="form-group">
+					  <div class="col-md-8 inputGroupContainer">
+						 <div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+							<input name="city" placeholder="City" class="form-control" type="text">
+						 </div>
+					  </div>
+				   </div>
+				   <div class="form-group">
+					  <div class="col-md-8 inputGroupContainer">
+						 <div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+							<input name="country" placeholder="Country" class="form-control" type="text">
+						 </div>
+					  </div>
+				   </div>
+				   <div class="form-group">
+					  <div class="col-md-8 inputGroupContainer">
+						 <div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+							<textarea class="form-control" name="comment" placeholder="Comments"></textarea>
+						 </div>
+					  </div>
+				   </div>
+				   <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+				   <div class="form-group">
+					  <label class="col-md-8 control-label"></label>
+					  <div class="col-md-8 btnSub">
+						 <button type="submit" class="btn btn-primary d-block w-100">Send <span class="glyphicon glyphicon-send"></span></button>
+					  </div>
+				   </div>
+				</fieldset>
+			 </form>
+      
+         
+			</div>
           </div>
         </div>
       </div>
@@ -464,6 +492,128 @@
       <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
       <script id="rendered-js">
+         $(document).ready(function () {
+           $('#contact_form').bootstrapValidator({
+             // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+             feedbackIcons: {
+               valid: 'glyphicon glyphicon-ok',
+               invalid: 'glyphicon glyphicon-remove',
+               validating: 'glyphicon glyphicon-refresh' },
+         
+             fields: {
+               full_name: {
+                 validators: {
+                   stringLength: {
+                     min: 2 },
+         
+                   notEmpty: {
+                     message: 'Please supply your Full name' } } },
+         
+         
+         
+               last_name: {
+                 validators: {
+                   stringLength: {
+                     min: 2 },
+         
+                   notEmpty: {
+                     message: 'Please supply your last name' } } },
+         
+         
+         
+               email: {
+                 validators: {
+                   notEmpty: {
+                     message: 'Please supply your email address' },
+         
+                   emailAddress: {
+                     message: 'Please supply a valid email address' } } },
+         
+         
+         
+               phone: {
+                 validators: {
+                   notEmpty: {
+                     message: 'Please supply your phone number' },
+         
+                   phone: {
+                     country: 'US',
+                     message: 'Please supply a vaild phone number with area code' } } },
+         
+         
+         
+               address: {
+                 validators: {
+                   stringLength: {
+                     min: 8 },
+         
+                   notEmpty: {
+                     message: 'Please supply your street address' } } },
+         
+				course: {
+                 validators: {
+                   stringLength: {
+                     min: 4 },
+         
+                   notEmpty: {
+                     message: 'Please select the course' } } },
+         
+               city: {
+                 validators: {
+                   stringLength: {
+                     min: 4 },
+         
+                   notEmpty: {
+                     message: 'Please supply your city' } } },
+         
+         
+         
+               country: {
+                 validators: {
+                   notEmpty: {
+                     message: 'Please select your country' } } },
+         
+         
+         
+               zip: {
+                 validators: {
+                   notEmpty: {
+                     message: 'Please supply your zip code' },
+         
+                   zipCode: {
+                     country: 'US',
+                     message: 'Please supply a vaild zip code' } } },
+         
+         
+         
+                } }).
+         
+         
+         
+         
+         
+           on('success.form.bv', function (e) {
+             $('#success_message').slideDown({ opacity: "show" }, "slow"); // Do something ...
+             $('#contact_form').data('bootstrapValidator').resetForm();
+         
+             // Prevent form submission
+             e.preventDefault();
+         
+             // Get the form instance
+             var $form = $(e.target);
+         
+             // Get the BootstrapValidator instance
+             var bv = $form.data('bootstrapValidator');
+         
+             // Use Ajax to submit form data
+             $.post($form.attr('action'), $form.serialize(), function (result) {
+               console.log(result);
+             }, 'json');
+           });
+         });
+         //# sourceURL=pen.js
+             
+      </script>
 
   </body>
 </html>
