@@ -1309,6 +1309,36 @@ footer img {
     font-size: 2rem;
   }
   
- 
+ .ml-auto, .mx-auto {
+    margin-left: auto!important;
+    display: none;
+  }
+  footer img {
+    margin-top: 0px;
+	width: 130px;
+    height: 50px;
+  }
+  h2.aos-init.aos-animate {
+    font-size: 20px;
+    margin-top: 100px;
+  }
+  .aos-animate .btn {
+    padding: 5px 15px !important;
+	font-size: 14px;
+ }
+ .footer .copyright, .footer .credits {
+    font-size: 10px;
+ }
+ p.mb-5.aos-init.aos-animate {
+    display: none;
+ }
+ .hero-section, .hero-section > .container > .row {
+    height: 50vh;
+    min-height: 300px;
+ }
+ .hero-section-sub, .hero-section-sub > .container-sub > .row {
+    height: 25vh;
+    min-height: 200px;
+ }
 
 }
