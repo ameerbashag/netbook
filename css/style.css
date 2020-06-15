@@ -44,7 +44,9 @@ h2.aos-init.aos-animate {
     color: #fff;
     margin-bottom: 30px;
 }
-
+p.mb-5.aos-init.aos-animate {
+    display: block;
+ }
 .container {
   z-index: 2;
   position: relative;
@@ -74,6 +76,7 @@ figure figcaption {
 
 .site-section {
   padding: 2rem 0;
+  
 }
 
 footer .site-section {
@@ -83,7 +86,10 @@ footer img {
     vertical-align: middle;
     border-style: none;
     margin-top: 30px;
+	width: 250px;
+    height: 100px;
 }
+
 
 .section-heading {
   font-size: 2rem;
@@ -679,6 +685,7 @@ footer img {
 # Header Section
 --------------------------------------------------------------*/
 
+
 .hero-section {
   background: linear-gradient(to right, #000946 0%, rgba(61, 179, 197, 0.8) 100%), url(../img/hero-bg.jpg);
   position: relative;
@@ -1265,7 +1272,7 @@ footer img {
   }
 
   .hero-section .hero-text-image {
-    margin-top: 4rem;
+    margin-top: -4rem;
   }
 
   .hero-section .iphone-wrap {
@@ -1284,10 +1291,10 @@ footer img {
   }
 
   .hero-section .iphone-wrap .phone-2 {
-    width: 250px;
-    position: absolute;
-    margin-top: 0px;
-    margin-left: 100px;
+    width: 150px;
+    position: relative;
+    margin-top: 7px;
+    margin-left: 0px;
   }
 }
 
@@ -1301,4 +1308,7 @@ footer img {
   .cta-section h2 {
     font-size: 2rem;
   }
+  
+ 
+
 }
