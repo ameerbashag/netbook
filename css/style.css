@@ -1330,7 +1330,8 @@ footer img {
     font-size: 10px;
  }
  p.mb-5.aos-init.aos-animate {
-    display: none;
+    display: block;
+	margin-top: -20px;
  }
  .hero-section, .hero-section > .container > .row {
     height: 50vh;
@@ -1339,6 +1340,7 @@ footer img {
  .hero-section-sub, .hero-section-sub > .container-sub > .row {
     height: 25vh;
     min-height: 200px;
+	width: 100%;
  }
 
 }
